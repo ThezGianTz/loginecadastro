@@ -16,7 +16,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
 
-
     // Verifica se o usuário existe e a senha está correta
     if ($user && $senha === $user['senha']) {
         // Login bem-sucedido, redireciona para a página inicial
